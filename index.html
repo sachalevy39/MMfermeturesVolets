@@ -206,7 +206,78 @@
     </div> <!-- end of cards-1 -->
     <!-- end of description -->
 
-    
+     <!-- formulaire de contact -->
+    <div id="contact-diag-form" class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <div class="section-title">Formulaire de contact</div>
+                        <h2 class="white">Nous vous rapelons ou précisons vos besoins</h2>
+                        <p class="white">En utilisant le formulaire ci dessous nous:</p>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Vous rappelons</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">During the call we'll require some info about the company</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Don't hesitate to email us for any questions or inquiries</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                   
+                    <!-- Call Me Form -->
+                    <form id="callMeForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="lname" name="lname" required>
+                            <label class="label-control" for="lname">Name</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="lphone" name="lphone" required>
+                            <label class="label-control" for="lphone">Phone</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="lemail" name="lemail" required>
+                            <label class="label-control" for="lemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control-select" id="lselect" required>
+                                <option class="select-option" value="" disabled selected>Interested in...</option>
+                                <option class="select-option" value="Off The Ground">Off The Ground</option>
+                                <option class="select-option" value="Accelerated Growth">Accelerated Growth</option>
+                                <option class="select-option" value="Market Domination">Market Domination</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox white">
+                            <input type="checkbox" id="lterms" value="Agreed-to-Terms" name="lterms" required>I agree with Aria's stated <a class="white" href="privacy-policy.html">Privacy Policy</a> and <a class="white" href="terms-conditions.html">Terms & Conditions</a>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">CALL ME</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="lmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of call me form -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of call me -->
+   
 
     <!-- Details 1 -->
 	<div id="details" class="accordion">
@@ -215,16 +286,16 @@
             
             <!-- Accordion -->
             <div class="accordion-container" id="accordionOne">
-                <h2>Accelerate Business Growth To Improve Revenue Numbers</h2>
+                <h2>Nos valeurs</h2>
                 <div class="item">
                     <div id="headingOne">
                         <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
-                            <span class="circle-numbering">1</span><span class="accordion-title">How Can Aria Help Your Business</span>
+                            <span class="circle-numbering">1</span><span class="accordion-title">Entreprise de confiance</span>
                         </span>
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
                         <div class="accordion-body">
-                            At Aria solutions, we’ve taken the consultancy concept one step further by offering a full service management organization with expertise.
+                            Nous travaillons avec nos partenaires assurances qui nous font confiance depuis plus de 15 ans.
                         </div>
                     </div>
                 </div> <!-- end of item -->
@@ -232,12 +303,12 @@
                 <div class="item">
                     <div id="headingTwo">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
-                            <span class="circle-numbering">2</span><span class="accordion-title">Great Strategic Business Planning</span>
+                            <span class="circle-numbering">2</span><span class="accordion-title">Intervention rapide</span>
                         </span>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
                         <div class="accordion-body">
-                            Aria partners with businesses to business growth and development ideas including environment analysis, plan execution and evaluation.
+                            Nous pouvons intervenir rapidement dans votre ville. De plus, grâce à notre questionnaire en ligne nous pouvons diagnostiquer ou identifier vos besoins. 
                         </div>
                     </div>
                 </div> <!-- end of item -->
@@ -245,12 +316,12 @@
                 <div class="item">
                     <div id="headingThree">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
-                            <span class="circle-numbering">3</span><span class="accordion-title">Online Marketing Campaigns</span>
+                            <span class="circle-numbering">3</span><span class="accordion-title">Professionalisme</span>
                         </span>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOne">
                         <div class="accordion-body">
-                            An awesome online marketing plan won't save your bad product but paired with a good product, the sky is the limit for what can be achieved.
+                            Nos équipes sont formées et nous assurons un suivis des chantiers avec nos clients.
                         </div>
                     </div>
                 </div> <!-- end of item -->
@@ -290,25 +361,25 @@
                             </li>
                             <li class="media">
                                 <div class="media-bullet">2</div>
-                                <div class="media-body"><strong>Maximum impact</strong> is what we look for in our actions</div>
+                                <div class="media-body"><strong>Large stock</strong> de pièces d'orgines afin de pouvoir répondre à tout vos besoins le plus rapidement possible</div>
                             </li>
                             <li class="media">
                                 <div class="media-bullet">3</div>
-                                <div class="media-body"><strong>Quality standards</strong> are important but meant to be exceeded</div>
+                                <div class="media-body"><strong>Diagnostique</strong> de panne et réparation immédiat</div>
                             </li>
                         </ul>
                         <ul class="list-unstyled li-space-lg last">
                             <li class="media">
                                 <div class="media-bullet">4</div>
-                                <div class="media-body"><strong>We're always looking</strong> for industry leaders to help them win their market position</div>
+                                <div class="media-body"><strong>Respect des mesures</strong> sanitaires lors de notre intervention afin de garantir votre sécurité</div>
                             </li>
                             <li class="media">
                                 <div class="media-bullet">5</div>
-                                <div class="media-body"><strong>Evaluation</strong> is a key aspect of this business and important</div>
+                                <div class="media-body"><strong>Devis </strong> gratuit</div>
                             </li>
                             <li class="media">
                                 <div class="media-bullet">6</div>
-                                <div class="media-body"><strong>Ethic</strong> procedures ar alwasy at the base of everything we do</div>
+                                <div class="media-body"><strong>Tarifs</strong> transparents et fixés à l'avance</div>
                             </li>
                         </ul>
                     </div> <!-- end of tab-pane -->
@@ -316,28 +387,26 @@
 
                     <!-- Tab -->
                     <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                        <p><strong>We strive to achieve</strong> 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: <a class="green" href="#your-link">with huge potential</a></p>
-                        <p><strong>Our goal is to help</strong> your company achieve its full potential and establish long term stability for <a class="green" href="#your-link">the stakeholders</a></p>
+                        <p><strong>Nous installons vos volets roulants</strong> ainsi que toutes vos fermetures grâce à nos partenaires de confiance certifiés par les assurances. Nous vous accompagnons aussi dans tout vos projets de construction.
+<!--                            LIEN dans les messages-->
+<!--                            <a class="green" href="#your-link">with huge potential</a></p>-->
+                        <p><strong>Nous pouvons aussi vous aider dans les cas suivants :</strong></p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">It's easy to get a quotation, just call our office anytime</div>
+                                <div class="media-body">Dépannage</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">We'll get back to you with an initial estimate soon</div>
+                                <div class="media-body">Réparation</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Get ready to see results even after only 30 days</div>
+                                <div class="media-body">Mise à niveau de vos installations (volets roulants electriques)</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Ask for a quote and start improving your business</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Just fill out the form and we'll call you right away</div>
+                                <div class="media-body">Modernisation de vos volets existants</div>
                             </li>
                         </ul>
                     </div> <!-- end of tab-pane -->
@@ -357,8 +426,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Read Our Customer Testimonials</h2>
-                    <p class="p-heading">Our clients are our partners and we can not imagine a better future for our company without helping them reach their objectives</p>
+                    <h2>Commentaires clients</h2>
+<!--                    <p class="p-heading">Votre avis nous interesse. </p>-->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -372,10 +441,9 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <div class="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</div>
-                                            <div class="testimonial-author">Jude Thorn - Founder</div>
+                                            <div class="testimonial-text">Les spécialistes des volets ! Un grand merci a l'équipe.</div>
+                                            <div class="testimonial-author">Axel - Paris</div>
                                         </div>
                                     </div>
                                 </div> <!-- end of swiper-slide -->
@@ -384,10 +452,10 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <div class="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </div>
-                                            <div class="testimonial-author">Marsha Singer - Marketer</div>
+                                            <div class="testimonial-text">Quel plaisir de profiter des volets électriques !
+                                            Merci Mickael ! Je recommande.</div>
+                                            <div class="testimonial-author">Arnaud - Paris</div>
                                         </div>
                                     </div>        
                                 </div> <!-- end of swiper-slide -->
@@ -396,10 +464,9 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <div class="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</div>
-                                            <div class="testimonial-author">Roy Smith - Developer</div>
+                                            <div class="testimonial-text">Remplacement en un temps record après passage de manifestants.</div>
+                                            <div class="testimonial-author">Rudy - Paris</div>
                                         </div>
                                     </div>        
                                 </div> <!-- end of swiper-slide -->
@@ -408,10 +475,10 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
+<!--                                        <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">-->
                                         <div class="card-body">
-                                            <div class="testimonial-text">At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</div>
-                                            <div class="testimonial-author">Ronald Spice - Owner</div>
+                                            <div class="testimonial-text">Merci Mickael ! Il m'a même aidé dans les démarches avec les assurances.</div>
+                                            <div class="testimonial-author">Linda - Paris</div>
                                         </div>
                                     </div>
                                 </div> <!-- end of swiper-slide -->
@@ -420,22 +487,9 @@
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <div class="testimonial-text">I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</div>
-                                            <div class="testimonial-author">Lindsay Rune - Manager</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-6.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-text">My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</div>
-                                            <div class="testimonial-author">Ann Black - Consultant</div>
+                                            <div class="testimonial-text">Merci a toute l'équipe ! Travail super, très propre !</div>
+                                            <div class="testimonial-author">Rose - Paris</div>
                                         </div>
                                     </div>        
                                 </div> <!-- end of swiper-slide -->
@@ -459,6 +513,81 @@
     <!-- end of testimonials -->
 
 
+    <!-- Contact -->
+    <div id="Avis" class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <div class="section-title">Avis</div>
+                        <h2>Votre avis nous interesse</h2>
+                        <p>Laissez votre commentaire sur notre site ou sur nos réseaux ci dessous :</p>
+
+                        <span class="fa-stack">
+                            <a href="https://www.facebook.com/MMFermetures/">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/mm_fermetures/?hl=fr">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.google.com/search?q=mmfermetures&rlz=1C1CHBF_frFR861FR861&oq=mmfermetures&aqs=chrome..69i57j0i13l2j0i13i30j69i60l4.4706j0j4&sourceid=chrome&ie=UTF-8">
+                                <span class="hexagon"></span>
+                                <i class="fab fa-google fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    
+                    <!-- Contact Form -->
+                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cname" required>
+                            <label class="label-control" for="cname">Nom</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="cville" required>
+                            <label class="label-control" for="cville">Ville</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="cemail" required>
+                            <label class="label-control" for="cemail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <label class="label-control" for="cmessage">Votre message</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>J'accepte la <a href="privacy-policy.html">Politique de confidentialité</a> de MMFermetures
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                    <!-- end of contact form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-2 -->
+    <!-- end of contact -->
+    
+    
+    
     <!-- Call Me -->
     <div id="callMe" class="form-1">
         <div class="container">

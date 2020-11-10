@@ -1251,6 +1251,7 @@ input[type='checkbox'] {
 
 .form-1 .text-container {
 	margin-bottom: 4rem;
+    min-height: 500px;
 }
 
 .form-1 .section-title {
@@ -1646,6 +1647,7 @@ input[type='checkbox'] {
 
 .form-2 .text-container {
 	margin-bottom: 3rem;
+    min-height: 400px;
 }
 
 .form-2 .section-title {
@@ -2232,6 +2234,7 @@ a:hover.back-to-top {
 	/* Contact */
 	.form-2 {
 		padding-top: 6.875rem;
+        min-height: 400px;
 	}
 
 	.form-2 .text-container {

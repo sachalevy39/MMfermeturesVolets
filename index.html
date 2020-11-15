@@ -13,12 +13,17 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/form.js" >
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="form.css" >
 <!--    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">-->
     
 
@@ -227,55 +232,54 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Formulaire de contact</h2>
                     <p class="lead">This template features the 'Lato' font, part of the Google Web Font library, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+ 
+ <!-- Form Started -->
+			<div class="col-md-6 col-sm-12 col-xs-12">
+				<div class="panel panel-danger">
+					<div class="panel-body">
+						<form id="reused_form">
+						 	<div class="form-group">
+						 		<label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+						 		<input type="text" name="name" class="form-control" placeholder="Enter Name">
+						 	</div>
+						 	<div class="form-group">
+						 		<label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+						 		<input type="email" name="email" class="form-control" placeholder="Enter Email">
+						 	</div>
+						 	<div class="form-group">
+						 		<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+						 		<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+						 	</div>
+
+
+						 	<div class="form-group">
+						 		<button class="btn btn-raised btn-block btn-danger">Post →</button>
+						 	</div>
+						</form>
+						<div id="error_message" style="width:100%; height:100%; display:none; ">
+						<h4>Error</h4>
+						Sorry there was an error sending your form.
+						</div>
+						<div id="success_message" style="width:100%; height:100%; display:none; ">
+						<h2>Success! Your Message was Sent Successfully.</h2>
+						</div>
+					</div>
+		</div>
+	</div>
+<!-- Form Ended -->                   
                     
                     
-                    
-                    
-                    
-                    <div class="row">
-<!--                    <div class="col-sm-6 col-sm-offset-3">-->
-<!--                        <div class="well" style="margin-top: 10%;">-->
-                        <h3>Send me a message</h3>
-<form action="index.php#contact" method="post">				    
-   <fieldset>
-      <?php if ($envoi) : echo $messageenvoi; ?>
-      <?php else : echo $messageenvoi; ?>
-      <p>Quelques mots avant notre entretien ?</p>
-      <label for="nom">/Nom : </label>
-      <input type="text" name="nom" id="nom" value="<?php echo $nom ?>"><?php echo $erreurnom ?>
-     <label for="prenom">/Prénom : </label>
-     <input type="text" name="prenom" id="prenom" value="<?php echo $prenom ?>"><br>					
-     <label for="email">/Email: </label>
-     <input type="email" name="email" id="email" value="<?php echo $email ?>"><?php echo $erreuremail ?>
-     <label>/Message :</label>
-     <textarea name="message" ><?php echo $message ?></textarea><?php echo $erreurmessage ?>
-     <input class="bouton" type="submit" name="submit" value="Envoyer" />
-     <input class="bouton" type="reset" value="Annuler"/>
-     <?php endif; ?>
-   </fieldset>
-</form>
-<!--                        </div>-->
-<!--                    </div>-->
                     </div>
-                    
-                    
-                    
-<!--                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeQ91gNAornxJHWhZLoZlXnjlRGBaKNyBCbKbioF6cOA6VRHA/viewform?embedded=true" width="100%" height="135%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
-<!--                    <img class="img-responsive" src="img/phones.jpg" alt="">-->
                 </div>
             </div>
 
-        </div>
         <!-- /.container -->
-
-    </div>
     <!-- /.content-section-a -->
 
 	<a  name="contact"></a>
@@ -341,8 +345,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/542096821a.js" crossorigin="anonymous" async></script>
+    <script src="js/form.js"></script>
 
 </body>
 

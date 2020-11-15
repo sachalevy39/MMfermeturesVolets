@@ -243,28 +243,24 @@
 <!--                    <div class="col-sm-6 col-sm-offset-3">-->
 <!--                        <div class="well" style="margin-top: 10%;">-->
                         <h3>Send me a message</h3>
-                        <form role="form" id="contactForm" data-toggle="validator" class="shake">
-                            <div class="row">
-                                <div class="form-group col-sm-6">
-                                    <label for="name" class="h4">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <label for="email" class="h4">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="h4 ">Message</label>
-                                <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
-                            <div id="msgSubmit" class="h3 text-center hidden"></div>
-                            <div class="clearfix"></div>
-                        </form>
+<form action="index.php#contact" method="post">				    
+   <fieldset>
+      <?php if ($envoi) : echo $messageenvoi; ?>
+      <?php else : echo $messageenvoi; ?>
+      <p>Quelques mots avant notre entretien ?</p>
+      <label for="nom">/Nom : </label>
+      <input type="text" name="nom" id="nom" value="<?php echo $nom ?>"><?php echo $erreurnom ?>
+     <label for="prenom">/Prénom : </label>
+     <input type="text" name="prenom" id="prenom" value="<?php echo $prenom ?>"><br>					
+     <label for="email">/Email: </label>
+     <input type="email" name="email" id="email" value="<?php echo $email ?>"><?php echo $erreuremail ?>
+     <label>/Message :</label>
+     <textarea name="message" ><?php echo $message ?></textarea><?php echo $erreurmessage ?>
+     <input class="bouton" type="submit" name="submit" value="Envoyer" />
+     <input class="bouton" type="reset" value="Annuler"/>
+     <?php endif; ?>
+   </fieldset>
+</form>
 <!--                        </div>-->
 <!--                    </div>-->
                     </div>

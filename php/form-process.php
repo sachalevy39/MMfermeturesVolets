@@ -4,32 +4,32 @@ $errorMSG = "";
 
 // NAME
 if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "Nom obligatoire ";
 } else {
     $name = $_POST["name"];
 }
 
 // EMAIL
 if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
+    $errorMSG .= "Email obligatoire ";
 } else {
     $email = $_POST["email"];
 }
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
+    $errorMSG .= "Message obligatoire ";
 } else {
     $message = $_POST["message"];
 }
 
 
-$EmailTo = "emailaddress@test.com";
-$Subject = "New Message Received";
+$EmailTo = "sachalevy39@gmail.com";
+$Subject = "Nouveau commentaire reçu MMFermetures";
 
 // prepare email body text
 $Body = "";
-$Body .= "Name: ";
+$Body .= "Nom: ";
 $Body .= $name;
 $Body .= "\n";
 $Body .= "Email: ";

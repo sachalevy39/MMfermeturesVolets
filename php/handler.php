@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 Tested working with PHP5.4 and above (including PHP 7 )
 
  */
-require_once './vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 use FormGuide\Handlx\FormHandler;
 
@@ -18,9 +18,10 @@ $validator->fields(['name','email'])->areRequired()->maxLength(50);
 $validator->field('email')->isEmail();
 $validator->field('comments')->maxLength(6000);
 
+$validator->email_date = date("Y-m-d H:i:s");
 
 
 
-$pp->sendEmailTo('someone@gmail.com'); // ← Your email here
+$pp->sendEmailTo('sachalevy39@gmail.com'); // ← Your email here
 
 echo $pp->process($_POST);
